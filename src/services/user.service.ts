@@ -6,12 +6,4 @@ export const UserService = {
       data,
     });
   },
-  getUsers: async () => {
-    return prisma.user.findMany();
-  },
-  getUserById: async (id: string) => {
-    return prisma.user.findUnique({
-      where: { id },
-    });
-  },
 };
