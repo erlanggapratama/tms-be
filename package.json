@@ -1,0 +1,30 @@
+{
+  "name": "tsm-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx src/server.ts",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/jwt": "^10.0.0",
+    "@prisma/adapter-pg": "^7.7.0",
+    "@prisma/client": "^7.7.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5",
+    "fastify-cli": "^8.0.0",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "prisma": "^7.7.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  }
+}
