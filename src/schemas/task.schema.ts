@@ -14,5 +14,4 @@ export const updateTaskSchema = {
     description: { type: "string" },
     completed: { type: "boolean" },
   },
-  required: [],
 };
