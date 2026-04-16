@@ -71,7 +71,29 @@ Task Management System Backend adalah aplikasi RESTful API untuk mengelola tugas
 - `PUT /task/:id` - Update task (perlu authentication)
 - `DELETE /task/:id` - Hapus task (perlu authentication)
 
-## 🔧 Keputusan Teknis
+## � Dokumentasi API dengan Swagger
+
+Aplikasi ini menggunakan **Swagger** untuk dokumentasi API yang interaktif dan mudah digunakan. Swagger terintegrasi dengan Fastify menggunakan plugin resmi `@fastify/swagger` dan `@fastify/swagger-ui`.
+
+### Mengakses Swagger UI
+
+Setelah server berjalan, Anda dapat mengakses dokumentasi API melalui:
+
+```
+http://localhost:3000/docs
+```
+
+### Fitur Swagger UI
+
+- **Dokumentasi Interaktif**: Semua endpoint API dapat ditest langsung dari browser
+- **Schema Validation**: Menampilkan struktur request dan response yang expected
+- **Authentication Testing**: Mendukung testing dengan JWT token
+- **Response Examples**: Contoh response untuk setiap endpoint
+- **Model Definitions**: Definisi schema untuk User dan Task
+
+> **💡 Tips**: Gunakan Swagger UI untuk testing API selama development. Swagger secara otomatis generate dokumentasi berdasarkan schema yang didefinisikan di routes.
+
+## �🔧 Keputusan Teknis
 
 ### Framework dan Library
 
